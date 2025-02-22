@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+.slides img {
+    width: 50vw;
+    display: none;
+}
+.slides img.active {
+    display: block;
+}
+.featured, .latest-collection {
+    padding: 20px;
+    text-align: center;
+}
+.cars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.car img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+.large {
+    grid-column: span 2;
+}
+.small img, .large img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20vw;
+}
+.links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.logo img {
+    width: 60px; 
+    height: 50px; 
+}
