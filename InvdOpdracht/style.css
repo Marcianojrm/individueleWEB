@@ -59,7 +59,7 @@ nav ul li a {
     display: flex;
     width: 300%;
     transition: transform 1s ease-in-out;
-    transform: translateX(0); /* Zorgt ervoor dat de eerste afbeelding correct zichtbaar is */
+    transform: translateX(0); 
 }
 
 .slides img {
@@ -83,7 +83,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: nowrap; /* Zorgt ervoor dat de auto's naast elkaar blijven */
+    flex-wrap: nowrap; 
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -94,8 +94,8 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 30%; /* Zorgt ervoor dat ze altijd in een rij van 3 blijven */
-    min-width: 280px; /* Voorkomt dat ze te smal worden op kleinere schermen */
+    width: 30%; 
+    min-width: 280px; 
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -107,8 +107,8 @@ nav ul li a {
 
 .car img {
     width: 100%;
-    height: 18vh; /* Stel een vaste hoogte in voor consistentie */
-     /* Zorgt ervoor dat de afbeelding bijgesneden wordt zonder vervorming */
+    height: 18vh;
+ 
     border-radius: 10px;
 }
 
@@ -142,7 +142,7 @@ nav ul li a {
     text-align: center;
     background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
     max-width: 1200px;
-    border-radius: 25px; /* Rondere randen */
+    border-radius: 25px; 
     margin: 0 auto;
     overflow: hidden;
 }
