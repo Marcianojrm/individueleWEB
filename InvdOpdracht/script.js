@@ -1,17 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let slidesContainer = document.querySelector(".slides");
     let slides = document.querySelectorAll(".slides img");
     let currentIndex = 0;
     
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove("active"));
-        slides[index].classList.add("active");
-    }
-    
     function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    
-    showSlide(currentIndex);
-    setInterval(nextSlide, 10000);
+
+    setInterval(nextSlide, 5000);
 });
