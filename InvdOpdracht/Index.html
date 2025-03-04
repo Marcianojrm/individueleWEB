@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Vault - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -13,8 +14,10 @@
             <img src="pictures/Logo.png" alt="Car Vault Logo">
         </div>
         <nav>
-            
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Car Vault</a></li>
                 <li><a href="catalogus.html">Catalogus</a></li>
                 <li><a href="overons.html">Over ons</a></li>
@@ -22,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    
     
     <main>
         <section class="hero">
@@ -75,9 +79,7 @@
     <footer>
         <div class="links">
             <a href="#">FAQ</a>
-            <a href="#">Contact ons</a>
-            <a href="#">Over ons</a>
-            <a href="#">Catalogus</a>
+            
         </div>
         <div class="social-icons">
             <a href="#"><img src="pictures/instagram.png" alt="Instagram"></a>
