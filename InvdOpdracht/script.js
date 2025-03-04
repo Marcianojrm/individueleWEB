@@ -10,3 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(nextSlide, 5000);
 });
+
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
+

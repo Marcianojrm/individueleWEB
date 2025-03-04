@@ -1,0 +1,141 @@
+/* Algemene stijl voor de pagina */
+.overons-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Intro sectie */
+.intro h1 {
+    color: #ff5733;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Team sectie */
+.team {
+    padding: 40px 0;
+}
+
+.team h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Zorgt ervoor dat teamleden mooi naast elkaar staan op grotere schermen */
+    gap: 20px;
+    max-width: 90vw; /* Zorgt ervoor dat ze niet te smal worden */
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px; /* Zorgt voor consistente breedte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+    flex: 1;
+    max-width: 230px;
+}
+
+.team-member img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Missie sectie */
+.missie {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.missie h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.missie p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Waarden sectie */
+.waarden {
+    margin-top: 50px;
+}
+
+.waarden h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.waarden-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.waarde {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.waarde h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.waarde p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Alle teamleden onder elkaar op mobiele schermen */
+    }
+
+    .team-member {
+        width: 100%; /* Zorgt ervoor dat de teamleden de volledige breedte van de container nemen */
+    }
+}
