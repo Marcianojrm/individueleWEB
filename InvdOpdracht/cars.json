@@ -1,0 +1,106 @@
+[
+    {
+        "merk": "Porsche",
+        "model": "911 GT3 RS",
+        "bouwjaar": 2023,
+        "categorie": "Sportwagen",
+        "image": "pictures/Porsche.jpg",
+        "description": "Een high-performance sportwagen met een atmosferische 4.0-liter zescilinder motor en een lichtgewicht ontwerp voor maximale snelheid en wendbaarheid."
+    },
+    {
+        "merk": "Lamborghini",
+        "model": "Urus Mansory",
+        "bouwjaar": 2022,
+        "categorie": "SUV",
+        "image": "pictures/urus.jpg",
+        "description": "Een getunede versie van Lamborghini’s Urus, met extra vermogen, een unieke bodykit en een exclusief interieur voor maximale sportiviteit."
+    },
+    {
+        "merk": "Dodge",
+        "model": "Ram 1500",
+        "bouwjaar": 2022,
+        "categorie": "Pickup",
+        "image": "pictures/dodgeram.jpg",
+        "description": "Een robuuste en krachtige pickup truck met luxe interieur en geavanceerde technologieën voor ultiem rijcomfort en prestaties."
+    },
+    {
+        "merk": "Ford",
+        "model": "Mustang Shelby GT500",
+        "bouwjaar": 2021,
+        "categorie": "Muscle Car",
+        "image": "pictures/FordMustangShelby.jpg",
+        "description": "Een krachtige muscle car met een supercharged V8-motor, bekend om zijn brute snelheid en agressief design."
+    },
+    {
+        "merk": "Mercedes",
+        "model": "G-Wagon Brabus",
+        "bouwjaar": 2023,
+        "categorie": "SUV",
+        "image": "pictures/Gwagon.jpg",
+        "description": "Een luxe, op maat gemaakte SUV met verhoogde prestaties en een opvallend exterieur, ontworpen voor ultieme exclusiviteit."
+    },
+    {
+        "merk": "Koenigsegg",
+        "model": "Jesko",
+        "bouwjaar": 2023,
+        "categorie": "Hypercar",
+        "image": "pictures/Koenegg.jpeg",
+        "description": "Een hypercar met een twin-turbo V8-motor en geavanceerde aerodynamica, ontworpen voor ongekende snelheid en prestaties."
+    },
+    {
+        "merk": "Lamborghini",
+        "model": "Aventador SVJ 63 Roadster",
+        "bouwjaar": 2021,
+        "categorie": "Sportwagen",
+        "image": "pictures/lambo.jpeg",
+        "description": "Een gelimiteerde open-top supercar met een V12-motor en unieke styling, exclusief ontworpen voor ultieme prestaties."
+    },
+    {
+        "merk": "McLaren",
+        "model": "600LT Spider",
+        "bouwjaar": 2020,
+        "categorie": "Sportwagen",
+        "image": "pictures/mclaren.jpeg",
+        "description": "Een lichtgewicht supercar met een twin-turbo V8 en aerodynamisch ontwerp voor uitzonderlijke prestaties op en buiten het circuit."
+    },
+    {
+        "merk": "Ferrari",
+        "model": "F8 Tributo",
+        "bouwjaar": 2022,
+        "categorie": "Sportwagen",
+        "image": "pictures/ferrari_f8.jpg",
+        "description": "Een krachtige Italiaanse supercar met een twin-turbo V8-motor en aerodynamische innovaties voor maximale snelheid."
+    },
+    {
+        "merk": "Audi",
+        "model": "RS7 Sportback",
+        "bouwjaar": 2021,
+        "categorie": "Sportwagen",
+        "image": "pictures/audi_rs7.jpg",
+        "description": "Een luxe sportieve sedan met een krachtige V8-motor, quattro-aandrijving en high-tech interieur."
+    },
+    {
+        "merk": "BMW",
+        "model": "M4 G82",
+        "bouwjaar": 2023,
+        "categorie": "Sportwagen",
+        "image": "pictures/bmw_m4.jpg",
+        "description": "Een high-performance coupé met een twin-turbo zes-in-lijn motor en agressieve styling."
+    },
+    {
+        "merk": "Aston Martin",
+        "model": "DBS Superleggera",
+        "bouwjaar": 2020,
+        "categorie": "Sportwagen",
+        "image": "pictures/aston_dbs.jpg",
+        "description": "Een elegante Britse grand tourer met een krachtige V12-motor en een luxueus interieur."
+    },
+    {
+        "merk": "Tesla",
+        "model": "Model S Plaid",
+        "bouwjaar": 2023,
+        "categorie": "Elektrisch",
+        "image": "pictures/tesla_model_s.jpg",
+        "description": "Een revolutionaire elektrische sedan met een verbluffende acceleratie en geavanceerde technologie."
+    }
+]

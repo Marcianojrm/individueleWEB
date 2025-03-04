@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.catalogus {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.auto-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.auto-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70vw;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.auto-card:hover {
+    transform: translateY(-5px);
+}
+
+.auto-card img {
+    width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.auto-info {
+    flex: 1;
+}
+
+.auto-info h3 {
+    font-size: 1.6em;
+    margin: 0 0 5px 0;
+}
+
+.categorie-bouwjaar {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0 10px 0;
+}
+
+.auto-info .categorie {
+    color: #007BFF;
+}
+
+.auto-info .bouwjaar {
+    color: black;
+}
+
+
+
+.info-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.info-button:hover {
+    background-color: #0056b3;
+}
+
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    align-items: flex-start; 
+    gap: 30px; 
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px; 
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.controls select, .controls button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.controls button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); 
+}
+
+.logo img {
+    width: 60px; 
+    height: 50px; 
+}
