@@ -157,6 +157,87 @@ nav ul li a {
     margin: auto;
 }
 
+.overons-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    color: #ff5733;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Voorkomt dat ze naar beneden gaan */
+    gap: 20px;
+    max-width: 90vw; /* Zorgt dat ze niet te smal worden */
+    margin: 0 auto; /* Centreert de grid */
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px; /* Zorgt voor consistente breedte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px; /* Forceren van dezelfde hoogte */
+    flex: 1; /* Zorgt dat ze gelijk verdeeld worden */
+    max-width: 230px; /* Voorkomt te smalle items */
+}
+
+.team-member img {
+    width: 125x;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.missie, .waarden {
+    margin-top: 50px;
+}
+
+.waarden-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.waarde {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
 .large {
     grid-column: span 2;
     grid-row: span 2;
