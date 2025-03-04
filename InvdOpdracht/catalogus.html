@@ -14,7 +14,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Car Vault</a></li>
+                <li><a href="Index.html">Car Vault</a></li>
                 <li><a href="#">Catalogus</a></li>
                 <li><a href="#">Over ons</a></li>
                 <li><a href="#">Contact</a></li>
@@ -23,11 +23,33 @@
     </header>
 
     <main>
+        <div class="controls">
+            <label for="categorie-filter">Filter op categorie:</label>
+            <select id="categorie-filter">
+                <option value="all">Alle categorieën</option>
+                <option value="Sportwagen">Sportwagen</option>
+                <option value="SUV">SUV</option>
+                <option value="Pickup">Pickup</option>
+                <option value="Muscle Car">Muscle Car</option>
+                <option value="Hypercar">Hypercar</option>
+            </select>
+        
+            <label for="sorteren">Sorteer op bouwjaar:</label>
+            <button id="sort-asc">🔼 Oplopend</button>
+            <button id="sort-desc">🔽 Aflopend</button>
+        </div>
+        
         <section class="catalogus">
             <h1>Bekijk onze catalogus</h1>
             <div id="auto-container" class="auto-grid"></div>
+            <div class="pagination">
+                <button id="prevPage">Vorige</button>
+                <span id="pageIndicator">Pagina 1</span>
+                <button id="nextPage">Volgende</button>
+            </div>
         </section>
     </main>
+    
 
     <footer>
         <div class="links">
