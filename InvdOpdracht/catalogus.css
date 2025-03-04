@@ -218,3 +218,147 @@ footer {
     width: 60px; 
     height: 50px; 
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    margin-left: 60vw; 
+}
+
+
+/* Responsieve aanpassingen voor kleinere schermen (mobiele apparaten) */
+@media (max-width: 768px) {
+
+    .auto-grid {
+        flex-direction: column;  /* Verandert de indeling naar verticaal voor mobiel */
+        align-items: center;  /* Centreer de items */
+    }
+
+    .auto-card {
+        width: 90%;  /* De kaarten nemen nu bijna de volledige breedte op mobiel */
+        margin-bottom: 20px;  /* Ruimte tussen de kaarten */
+        flex-direction: column; /* Zorg ervoor dat de afbeelding boven de tekst komt */
+        padding: 20px;
+    }
+
+    .auto-card img {
+        width: 100%;  /* Zorg ervoor dat de afbeeldingen zich aanpassen aan de breedte van de kaart */
+        height: auto;  /* Houdt de verhouding van de afbeelding goed */
+        margin-bottom: 15px; /* Ruimte tussen de afbeelding en tekst */
+    }
+
+    .auto-info {
+        text-align: center;  /* Zorg ervoor dat de tekst goed wordt gecentreerd */
+    }
+
+    .info-button {
+        width: 100%;  /* Zorgt ervoor dat de knop volledig wordt getoond */
+        text-align: center;
+    }
+
+    .categorie-bouwjaar {
+        text-align: center;
+    }
+
+
+    /* Het navigatiemenu wordt nu correct weergegeven met de hamburgerknop */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        position: absolute;
+        top: 80px; /* Plaatst het menu direct onder de header */
+        background-color: #333;
+        width: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    /* De hamburgerknop zal nu zichtbaar zijn */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+        z-index: 1001; /* Zorg ervoor dat de hamburgerknop boven andere inhoud komt */
+    }
+
+    /* Wanneer de hamburgerknop wordt ingedrukt, zorg ervoor dat het menu verschijnt */
+    nav.active ul {
+        display: flex;
+    }
+
+    /* De hoofdinhoud past zich goed aan voor mobiele schermen */
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    /* De filters en controls sectie worden bovenaan gepositioneerd */
+    .controls {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    /* De auto's in de catalogus worden onder elkaar geplaatst in plaats van naast elkaar */
+    .cars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car {
+        width: 90%; /* Auto's zijn nu breder voor mobiele schermen */
+        margin-bottom: 20px;
+    }
+
+    /* De collectie-galerij wordt in een enkele kolom weergegeven */
+    .collection-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .collection-grid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+/* Responsieve aanpassingen voor extra kleine schermen (bijv. telefoons in portretmodus) */
+@media (max-width: 480px) {
+    /* Maak de logo kleiner op kleinere schermen */
+    .logo img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .controls {
+        width: 90%; /* Maak de controls smaller */
+    }
+
+    .auto-card img {
+        width: 250px; /* Maak de afbeeldingen van de auto's kleiner */
+        height: auto;
+    }
+
+    .auto-info h3 {
+        font-size: 1.4em; /* Kleinere tekst voor de auto-informatie */
+    }
+}

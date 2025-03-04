@@ -1,12 +1,13 @@
-/* Algemene stijl voor de pagina */
+
 .overons-container {
     max-width: 900px;
     margin: auto;
     padding: 50px 20px;
     text-align: center;
+    margin-top: 5vh;
 }
 
-/* Intro sectie */
+
 .intro h1 {
     color: #ff5733;
     font-size: 2.5em;
@@ -18,7 +19,7 @@
     color: #666;
 }
 
-/* Team sectie */
+
 .team {
     padding: 40px 0;
 }
@@ -32,9 +33,9 @@
 .team-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Zorgt ervoor dat teamleden mooi naast elkaar staan op grotere schermen */
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 90vw; /* Zorgt ervoor dat ze niet te smal worden */
+    max-width: 90vw;
     margin: 0 auto;
 }
 
@@ -44,7 +45,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 220px; /* Zorgt voor consistente breedte */
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +76,7 @@
     align-items: center;
 }
 
-/* Missie sectie */
+
 .missie {
     margin-top: 50px;
     text-align: center;
@@ -92,7 +93,7 @@
     color: #666;
 }
 
-/* Waarden sectie */
+
 .waarden {
     margin-top: 50px;
 }
@@ -128,14 +129,70 @@
     font-size: 1em;
     color: #666;
 }
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    margin-left: 60vw; 
+}
 
-/* Mobile Responsiveness */
+
 @media (max-width: 768px) {
     .team-grid {
-        grid-template-columns: 1fr; /* Alle teamleden onder elkaar op mobiele schermen */
+        grid-template-columns: 1fr; 
     }
 
     .team-member {
-        width: 100%; /* Zorgt ervoor dat de teamleden de volledige breedte van de container nemen */
+        width: 100%; 
+    }
+
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        position: absolute;
+        top: 80px;
+        background-color: #333;
+        width: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+        z-index: 1001; 
+    }
+
+    
+    nav.active ul {
+        display: flex;
+    }
+
+   
+    .waarden-grid {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .waarde {
+        width: 90%; 
+        margin-bottom: 20px;
     }
 }
+

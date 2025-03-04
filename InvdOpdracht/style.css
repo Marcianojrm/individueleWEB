@@ -6,16 +6,16 @@ body {
 
 header {
     
-    position: fixed; /* Dit zorgt ervoor dat het menu bovenaan blijft */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10; /* Zorgt ervoor dat het menu boven de afbeelding komt */
+    z-index: 10; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333; /* Semi-transparante achtergrond */
+    background-color: #333; 
     color: white;
 }
 

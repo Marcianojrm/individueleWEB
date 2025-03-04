@@ -14,14 +14,22 @@
             <img src="pictures/Logo.png" alt="Car Vault Logo">
         </div>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
             <ul>
                 <li><a href="index.html">Car Vault</a></li>
                 <li><a href="catalogus.html">Catalogus</a></li>
-                <li><a href="overons.html" class="active">Over ons</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 
     <main class="overons-container">
         <section class="intro">
@@ -82,9 +90,6 @@
     <footer>
         <div class="links">
             <a href="#">FAQ</a>
-            <a href="#">Contact ons</a>
-            <a href="#">Over ons</a>
-            <a href="#">Catalogus</a>
         </div>
         <div class="social-icons">
             <a href="#"><img src="pictures/instagram.png" alt="Instagram"></a>
