@@ -189,7 +189,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    margin-top: 20px;
+    margin-top: 15vh;
 }
 
 .links a {
@@ -255,8 +255,9 @@ footer {
     }
 
     .info-button {
-        width: 100%;  /* Zorgt ervoor dat de knop volledig wordt getoond */
+        width: 75%;  /* Zorgt ervoor dat de knop volledig wordt getoond */
         text-align: center;
+        
     }
 
     .categorie-bouwjaar {

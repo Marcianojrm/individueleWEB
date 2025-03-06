@@ -45,26 +45,53 @@
         <section class="featured">
             <h2>Auto's van de maand</h2>
             <div class="cars">
-                <div class="car">
+                <div class="car" data-image="pictures/FordMustangShelby.jpg" 
+                    data-title="Ford Mustang Shelby GT500" 
+                    data-description="Een krachtige muscle car met een supercharged V8-motor, bekend om zijn brute snelheid en agressief design." 
+                    data-category="Sportwagen" 
+                     data-year="2021">
                     <img src="pictures/FordMustangShelby.jpg" alt="Ford Mustang Shelby GT500">
                     <h3>Ford Mustang Shelby GT500</h3>
-                    <p>Een krachtige muscle car met een supercharged V8-motor, bekend om zijn brute snelheid en agressief design.</p>
-                    <a href="#">Lees meer</a>
-                </div>
-                <div class="car">
-                    <img src="pictures/Gwagon.jpg" alt="G-Wagon Brabus">
+                <p>Een krachtige muscle car met een supercharged V8-motor, bekend om zijn brute snelheid en agressief design.</p>
+                        <a href="#" class="open-modal">Lees meer</a>
+                 </div>
+                <div class="car" data-image="pictures/Gwagon.jpg"
+                    data-title="Mercedes G Wagon Brabus" 
+                    data-description="Een luxe, op maat gemaakte SUV met verhoogde prestaties en een opvallend exterieur, ontworpen voor ultieme exclusiviteit." 
+                    data-category="SUV" 
+                     data-year="2023">
+                     <img src="pictures/Gwagon.jpg" alt="Mercedes G-Wagon">
                     <h3>G-Wagon Brabus</h3>
                     <p>Een luxe, op maat gemaakte SUV met verhoogde prestaties en een opvallend exterieur, ontworpen voor ultieme exclusiviteit.</p>
-                    <a href="#">Lees meer</a>
+                    <a href="#" class="open-modal">Lees meer</a>
+
                 </div>
-                <div class="car">
+                <div class="car" data-image="pictures/urus.jpg"
+                data-title="Urus Mansory" 
+                data-description="Een getunede versie van Lamborghini’s Urus, met extra vermogen, een unieke bodykit en een exclusief interieur voor maximale sportiviteit." 
+                data-category="SUV" 
+                 data-year="2022">
                     <img src="pictures/urus.jpg" alt="Urus Mansory">
                     <h3>Urus Mansory</h3>
                     <p>Een getunede versie van Lamborghini’s Urus, met extra vermogen, een unieke bodykit en een exclusief interieur voor maximale sportiviteit.</p>
-                    <a href="#">Lees meer</a>
+                    <a href="#" class="open-modal">Lees meer</a>
+
                 </div>
             </div>
         </section>
+
+        <!-- Modal voor meer info -->
+<div id="car-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <img id="modal-image" src="" alt="Car Image">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <p><strong>Categorie:</strong> <span id="modal-category"></span></p>
+        <p><strong>Bouwjaar:</strong> <span id="modal-year"></span></p>
+    </div>
+</div>
+
         
         <section class="latest-collection">
             <h2>Nieuwste collectie</h2>
@@ -90,5 +117,6 @@
         </div>
         <p>&copy; 2025 Car Vault. All rights reserved.</p>
     </footer>
+    <script src="model.js"></script>
 </body>
 </html>
