@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Disable/enable pagination buttons
         prevPageBtn.disabled = currentPage === 1;
         nextPageBtn.disabled = currentPage >= totalPages;
+
+        document.getElementById("resultCountValue").textContent = filteredData.length;
     }
 
     // Open modal with car details
@@ -147,8 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Items per page change listener
     itemsPerPageSelect.addEventListener("change", function() {
-        itemsPerPage = parseInt(itemsPerPageSelect.value);  // Update the items per page based on dropdown value
-        currentPage = 1;  // Reset to the first page when items per page changes
+        itemsPerPage = parseInt(itemsPerPageSelect.value);  
+        currentPage = 1;  
         displayCars();  // Re-render cars with the new settings
     });
 
@@ -165,15 +167,15 @@ resetFilterBtn.addEventListener("click", function () {
 
     // Reset het aantal items per pagina naar 5
     itemsPerPageSelect.value = 5;
-    itemsPerPage = 5;  // Zet de itemsPerPage naar de standaardwaarde
+    itemsPerPage = 5; 
 
-    // Reset de pagina naar 1
+    
     currentPage = 1;
 
     // Herstel de originele data zonder filters
     filteredData = [...autoData];
 
-    // Toon de auto's met de reset-instellingen
+    
     displayCars();
 });
 

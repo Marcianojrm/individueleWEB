@@ -128,5 +128,65 @@
         "image": "pictures/tesla_model_s.jpg",
         "description": "Een revolutionaire elektrische sedan met een verbluffende acceleratie en geavanceerde technologie.",
         "prijs": 130000
+    },
+    {
+        "id": 14,
+        "merk": "Alfa Romeo",
+        "model": "Giulia Quadrifoglio",
+        "bouwjaar": 2022,
+        "categorie": "Sportwagen",
+        "image": "pictures/alfa_romeo_giulia.jpg",
+        "description": "Een Italiaanse sportwagen met een krachtige V6-twin-turbo motor en een agressief design voor top-prestaties.",
+        "prijs": 85000
+    },
+    {
+        "id": 15,
+        "merk": "BMW",
+        "model": "X5 M",
+        "bouwjaar": 2023,
+        "categorie": "SUV",
+        "image": "pictures/bmw_x5_m.jpg",
+        "description": "Een sportieve SUV met een V8-motor, vierwielaandrijving en een luxe interieur voor zowel prestaties als comfort.",
+        "prijs": 120000
+    },
+    {
+        "id": 16,
+        "merk": "GMC",
+        "model": "Sierra 1500",
+        "bouwjaar": 2025,
+        "categorie": "Pickup",
+        "image": "pictures/GMC_Sierra_1500.jpg",
+        "description": "Een pickup truck met een supercharged V8-motor, ontworpen voor extreme prestaties en off-road capaciteiten.",
+        "prijs": 90000
+    },
+    {
+        "id": 17,
+        "merk": "Chevrolet",
+        "model": "Camaro ZL1",
+        "bouwjaar": 2021,
+        "categorie": "Muscle Car",
+        "image": "pictures/chevrolet_camaro_zl1.jpg",
+        "description": "Een iconische muscle car met een supercharged V8-motor voor explosieve prestaties en een agressief uiterlijk.",
+        "prijs": 75000
+    },
+    {
+        "id": 18,
+        "merk": "Bugatti",
+        "model": "Chiron Super Sport",
+        "bouwjaar": 2023,
+        "categorie": "Hypercar",
+        "image": "pictures/bugatti_chiron.jpg",
+        "description": "Een hypercar met een quad-turbo W16-motor, ongekende snelheid en een luxe afwerking voor de elite van de autobezitters.",
+        "prijs": 3500000
+    },
+    {
+        "id": 19,
+        "merk": "Audi",
+        "model": "e-tron GT",
+        "bouwjaar": 2023,
+        "categorie": "Elektrisch",
+        "image": "pictures/audi_e_tron_gt.jpg",
+        "description": "Een luxe elektrische sportwagen met een krachtige dual-motor setup, uitstekende prestaties en een futuristisch ontwerp.",
+        "prijs": 105000
     }
 ]

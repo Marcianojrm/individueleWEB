@@ -96,7 +96,10 @@ nav ul li a {
     color: black;
 }
 
-
+#resultCount {
+    text-align: center;
+    margin-top: 1vh;
+}
 
 .info-button {
     display: inline-block;
