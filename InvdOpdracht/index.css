@@ -92,7 +92,7 @@
     background-color: #007BFF;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s;
 }
 
@@ -233,3 +233,50 @@
     }
 }
 
+
+/* Stijl voor de modal */
+.modal {
+    display: none; /* Modal is standaard verborgen */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Zwarte achtergrond met transparantie */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.modal img {
+    width: 75%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
