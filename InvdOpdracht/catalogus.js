@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const itemsPerPageSelect = document.getElementById("items-per-page");
 
     // Fetch car data
-    fetch("cars.json")
+    fetch("http://localhost:3000/cars")
         .then(response => response.json())
         .then(data => {
             autoData = data;
