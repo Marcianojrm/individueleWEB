@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let autoData = []; 
-    let filteredData = []; 
+    let autoData = [];
+    let filteredData = [];
     let currentPage = 1;
-    const itemsPerPage = 5;
+    let itemsPerPage = 5;  // Standaard aantal items per pagina
 
     const autoContainer = document.getElementById("auto-container");
     const categoryFilter = document.getElementById("categorie-filter");
@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalDescription = document.getElementById("modalDescription");
     const modalImage = document.getElementById("modalImage");
 
+    // Items per page select
+    const itemsPerPageSelect = document.getElementById("items-per-page");
+
+    // Fetch car data
     fetch("cars.json")
         .then(response => response.json())
         .then(data => {
@@ -28,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Fout bij laden JSON:", error));
 
+    // Display cars
     function displayCars() {
         autoContainer.innerHTML = "";
         const startIndex = (currentPage - 1) * itemsPerPage;
@@ -50,17 +55,21 @@ document.addEventListener("DOMContentLoaded", function () {
             autoContainer.appendChild(autoCard);
         });
 
-        pageIndicator.textContent = `Pagina ${currentPage} van ${Math.ceil(filteredData.length / itemsPerPage)}`;
+        // Update page indicator
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        pageIndicator.textContent = `Pagina ${currentPage} van ${totalPages}`;
+
+        // Disable/enable pagination buttons
         prevPageBtn.disabled = currentPage === 1;
-        nextPageBtn.disabled = currentPage >= Math.ceil(filteredData.length / itemsPerPage);
+        nextPageBtn.disabled = currentPage >= totalPages;
+
+        document.getElementById("resultCountValue").textContent = filteredData.length;
     }
 
     // Open modal with car details
     autoContainer.addEventListener("click", function (e) {
         if (e.target && e.target.classList.contains("info-button")) {
-
             e.preventDefault();
-
             const carId = e.target.getAttribute("data-id");
             const car = autoData.find(car => car.id == carId);
 
@@ -98,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Category filtering
     categoryFilter.addEventListener("change", function () {
         const selectedCategory = categoryFilter.value;
         if (selectedCategory === "all") {
@@ -105,20 +115,23 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             filteredData = autoData.filter(auto => auto.categorie === selectedCategory);
         }
-        currentPage = 1;
+        currentPage = 1;  // Reset to the first page after filtering
         displayCars();
     });
 
+    // Sort by year (ascending)
     sortAscBtn.addEventListener("click", function () {
         filteredData.sort((a, b) => a.bouwjaar - b.bouwjaar);
         displayCars();
     });
 
+    // Sort by year (descending)
     sortDescBtn.addEventListener("click", function () {
         filteredData.sort((a, b) => b.bouwjaar - a.bouwjaar);
         displayCars();
     });
 
+    // Pagination: Previous and Next page buttons
     prevPageBtn.addEventListener("click", function () {
         if (currentPage > 1) {
             currentPage--;
@@ -127,9 +140,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nextPageBtn.addEventListener("click", function () {
-        if (currentPage < Math.ceil(filteredData.length / itemsPerPage)) {
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        if (currentPage < totalPages) {
             currentPage++;
             displayCars();
         }
     });
+
+    // Items per page change listener
+    itemsPerPageSelect.addEventListener("change", function() {
+        itemsPerPage = parseInt(itemsPerPageSelect.value);  
+        currentPage = 1;  
+        displayCars();  // Re-render cars with the new settings
+    });
+
+    // Set default value for itemsPerPage from the dropdown
+    itemsPerPageSelect.value = itemsPerPage;
+
+
+    // Reset filter button
+const resetFilterBtn = document.getElementById("reset-filter");
+
+resetFilterBtn.addEventListener("click", function () {
+    // Reset de categorie filter naar "all"
+    categoryFilter.value = "all";
+
+    // Reset het aantal items per pagina naar 5
+    itemsPerPageSelect.value = 5;
+    itemsPerPage = 5; 
+
+    
+    currentPage = 1;
+
+    // Herstel de originele data zonder filters
+    filteredData = [...autoData];
+
+    
+    displayCars();
+});
+
 });
