@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("modalBouwjaar").textContent = car.bouwjaar;
                 document.getElementById("modalCategorie").textContent = car.categorie;
                 document.getElementById("modalPrijs").textContent = formatter.format(car.prijs);
+                document.getElementById("editCarPrice").setAttribute("data-id", car.id);
 
                 // Show the modal
                 modal.style.display = "block";
@@ -138,6 +139,26 @@ document.addEventListener("DOMContentLoaded", function () {
             displayCars();
         }
     });
+
+            // 🚀 Prijs veranderen
+    document.getElementById("editCarPrice").addEventListener("click", function () {
+        const carId = this.getAttribute("data-id");
+        const newPrice = prompt("Voer een nieuwe prijs in:");
+
+       if (newPrice && !isNaN(newPrice)) {
+        fetch(`http://localhost:3000/cars/${carId}`, {
+            method: "PATCH",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({ prijs: parseFloat(newPrice) })
+        })
+        .then(() => {
+            alert("Prijs bijgewerkt!");
+            location.reload(); // Herlaad om nieuwe prijs te tonen
+        })
+        .catch(error => alert("Fout bij updaten prijs: " + error));
+    }
+    });
+
 
     nextPageBtn.addEventListener("click", function () {
         const totalPages = Math.ceil(filteredData.length / itemsPerPage);
