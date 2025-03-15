@@ -1,7 +1,7 @@
 {
   "cars": [
     {
-      "id": "1",
+      "id": 1,
       "merk": "Porsche",
       "model": "911 GT3 RS",
       "bouwjaar": 2023,
@@ -11,7 +11,7 @@
       "prijs": 300000
     },
     {
-      "id": "2",
+      "id": 2,
       "merk": "Lamborghini",
       "model": "Urus Mansory",
       "bouwjaar": 2022,
@@ -21,7 +21,7 @@
       "prijs": 300000
     },
     {
-      "id": "3",
+      "id": 3,
       "merk": "Dodge",
       "model": "Ram 1500",
       "bouwjaar": 2022,
@@ -31,7 +31,7 @@
       "prijs": 60000
     },
     {
-      "id": "4",
+      "id": 4,
       "merk": "Ford",
       "model": "Mustang Shelby GT500",
       "bouwjaar": 2021,
@@ -41,7 +41,7 @@
       "prijs": 80000
     },
     {
-      "id": "5",
+      "id": 5,
       "merk": "Mercedes",
       "model": "G-Wagon Brabus",
       "bouwjaar": 2023,
@@ -51,7 +51,7 @@
       "prijs": 350000
     },
     {
-      "id": "6",
+      "id": 6,
       "merk": "Koenigsegg",
       "model": "Jesko",
       "bouwjaar": 2023,
@@ -61,7 +61,7 @@
       "prijs": 3000000
     },
     {
-      "id": "7",
+      "id": 7,
       "merk": "Lamborghini",
       "model": "Aventador SVJ 63 Roadster",
       "bouwjaar": 2021,
@@ -71,7 +71,7 @@
       "prijs": 500000
     },
     {
-      "id": "8",
+      "id": 8,
       "merk": "McLaren",
       "model": "600LT Spider",
       "bouwjaar": 2020,
@@ -81,7 +81,7 @@
       "prijs": 250000
     },
     {
-      "id": "9",
+      "id": 9,
       "merk": "Ferrari",
       "model": "F8 Tributo",
       "bouwjaar": 2022,
@@ -91,7 +91,7 @@
       "prijs": 270000
     },
     {
-      "id": "10",
+      "id": 10,
       "merk": "Audi",
       "model": "RS7 Sportback",
       "bouwjaar": 2021,
@@ -101,7 +101,7 @@
       "prijs": 120000
     },
     {
-      "id": "11",
+      "id": 11,
       "merk": "BMW",
       "model": "M4 G82",
       "bouwjaar": 2023,
@@ -111,7 +111,7 @@
       "prijs": 90000
     },
     {
-      "id": "12",
+      "id": 12,
       "merk": "Aston Martin",
       "model": "DBS Superleggera",
       "bouwjaar": 2020,
@@ -121,7 +121,7 @@
       "prijs": 310000
     },
     {
-      "id": "13",
+      "id": 13,
       "merk": "Tesla",
       "model": "Model S Plaid",
       "bouwjaar": 2023,
@@ -131,7 +131,7 @@
       "prijs": 130000
     },
     {
-      "id": "14",
+      "id": 14,
       "merk": "Alfa Romeo",
       "model": "Giulia Quadrifoglio",
       "bouwjaar": 2022,
@@ -141,7 +141,7 @@
       "prijs": 85000
     },
     {
-      "id": "15",
+      "id": 15,
       "merk": "BMW",
       "model": "X5 M",
       "bouwjaar": 2023,
@@ -151,7 +151,7 @@
       "prijs": 120000
     },
     {
-      "id": "16",
+      "id": 16,
       "merk": "GMC",
       "model": "Sierra 1500",
       "bouwjaar": 2025,
@@ -161,7 +161,7 @@
       "prijs": 90000
     },
     {
-      "id": "17",
+      "id": 17,
       "merk": "Chevrolet",
       "model": "Camaro ZL1",
       "bouwjaar": 2021,
@@ -171,7 +171,7 @@
       "prijs": 75000
     },
     {
-      "id": "18",
+      "id": 18,
       "merk": "Bugatti",
       "model": "Chiron Super Sport",
       "bouwjaar": 2023,
@@ -181,7 +181,7 @@
       "prijs": 3500000
     },
     {
-      "id": "19",
+      "id": 19,
       "merk": "Audi",
       "model": "e-tron GT",
       "bouwjaar": 2023,
@@ -191,14 +191,14 @@
       "prijs": 105000
     },
     {
-      "id": "20",
+      "id": 20,
       "merk": "Mercedes",
       "model": "GT",
-      "bouwjaar": 2023,
+      "bouwjaar": 2022,
       "categorie": "Sportwagen",
-      "prijs": 300000,
-      "description": "Super snelle merrie",
-      "image": "pictures/mercedesgt.jpg"
+      "prijs": 32323232,
+      "description": "eggeegge",
+      "image": "pictures/default.jpg"
     }
   ]
 }
