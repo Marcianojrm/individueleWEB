@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Vault - Beheer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beheer.css">
+    <script defer src="beheer.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pictures/Logo.png" alt="Car Vault Logo">
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Car Vault</a></li>
+                <li><a href="catalogus.html">Catalogus</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="beheer.html">Auto's beheren</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <main>
+        <h1>Auto's beheren</h1>
+
+        <!-- Formulier om een auto toe te voegen -->
+        <form id="addCarForm">
+            <label>Merk:</label>
+            <input type="text" id="merk" required placeholder="Bijv. Mercedes">
+            
+            <label>Model:</label>
+            <input type="text" id="model" required placeholder="Bijv. AMG GT">
+
+            <label>Bouwjaar:</label>
+            <input type="number" id="bouwjaar" required minlength="4" maxlength="4" pattern="\d{4}" placeholder="Bijv. 2024">
+
+            <label>Categorie:</label>
+            <select id="categorie">
+                <option value="Sportwagen">Sportwagen</option>
+                <option value="SUV">SUV</option>
+                <option value="Pickup">Pickup</option>
+                <option value="Muscle Car">Muscle Car</option>
+                <option value="Hypercar">Hypercar</option>
+                <option value="Elektrisch">Elektrisch</option>
+            </select>
+
+            <label>Prijs:</label>
+            <input type="number" id="prijs" required>
+
+            <label>Beschrijving:</label>
+            <textarea id="description" required></textarea>
+
+            <label>Afbeelding uploaden:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <img id="previewImage" src="" alt="Voorbeeldafbeelding" style="display:none; max-width: 150px; margin-top: 10px;">
+
+            <button type="submit">Toevoegen</button>
+        </form>
+
+        <!-- Lijst met auto's -->
+        <h2>Bestaande auto's</h2>
+        <label for="deleteCarSelect">Selecteer een auto om te verwijderen:</label>
+        <select id="deleteCarSelect">
+         <option value="">-- Kies een auto --</option>
+        </select>
+        <button id="deleteCarButton">Verwijderen</button>
+
+
+        <div id="popupNotification" class="popup">
+            <span id="closePopup" class="close-popup">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Car Vault. All rights reserved.</p>
+    </footer>
+</body>
+</html>

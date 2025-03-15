@@ -274,6 +274,31 @@ footer {
     cursor: pointer;
 }
 
+#editCarPrice {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease-in-out;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#editCarPrice:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#editCarPrice:active {
+    background-color: #003f7f;
+    transform: scale(0.95);
+}
+
 
 /* Responsieve aanpassingen voor kleinere schermen (mobiele apparaten) */
 @media (max-width: 768px) {
