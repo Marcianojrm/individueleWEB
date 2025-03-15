@@ -49,41 +49,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     addCarForm.addEventListener("submit", function (e) {
         e.preventDefault();
-
-    fetch("http://localhost:3000/cars")
-        .then(response => response.json())
-        .then(data => {
-            const highestId = data.reduce((max, car) => Math.max(max, parseInt(car.id)), 0);
-            const newId = highestId + 1;
-
-            const newCar = {
-                id: newId.toString(),  // Zorg ervoor dat ID altijd string blijft
-                merk: document.getElementById("merk").value,
-                model: document.getElementById("model").value,
-                bouwjaar: parseInt(document.getElementById("bouwjaar").value),
-                categorie: document.getElementById("categorie").value,
-                prijs: parseFloat(document.getElementById("prijs").value),
-                description: document.getElementById("description").value,
-                image: uploadedImagePath || "pictures/default.jpg"
-            };
-
-            return fetch("http://localhost:3000/cars", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(newCar)
+    
+        fetch("http://localhost:3000/cars")
+            .then(response => response.json())
+            .then(data => {
+                const highestId = data.reduce((max, car) => Math.max(max, parseInt(car.id)), 0);
+                const newId = highestId + 1; // ID blijft een getal
+    
+                const newCar = {
+                    id: Number(newId),  // Nu wordt het een numeriek ID
+                    merk: document.getElementById("merk").value,
+                    model: document.getElementById("model").value,
+                    bouwjaar: parseInt(document.getElementById("bouwjaar").value),
+                    categorie: document.getElementById("categorie").value,
+                    prijs: parseFloat(document.getElementById("prijs").value),
+                    description: document.getElementById("description").value,
+                    image: uploadedImagePath || "pictures/default.jpg"
+                };
+    
+                return fetch("http://localhost:3000/cars", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(newCar)
+                });
+            })
+            .then(() => {
+                fetchCars();  
+                addCarForm.reset();
+                previewImage.style.display = "none";
+                showPopup("Auto toegevoegd!"); 
+            })
+            .catch(error => {
+                console.error("Fout bij toevoegen auto:", error);
+                showPopup("Fout bij toevoegen auto ", true);
             });
-        })
-        .then(() => {
-            fetchCars();  
-            addCarForm.reset();
-            previewImage.style.display = "none";
-            showPopup("Auto toegevoegd!"); 
-        })
-        .catch(error => {
-            console.error("Fout bij toevoegen auto:", error);
-            showPopup("Fout bij toevoegen auto ", true);
-        });
-});
+    });
+    
 
 
     // Auto verwijderen
