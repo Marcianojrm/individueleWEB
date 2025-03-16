@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://localhost:3000/cars")
         .then(response => response.json())
         .then(data => {
-            autoData = data;
+            autoData = data.cars;
             filteredData = [...autoData];
             displayCars();
         })
