@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             autoCard.innerHTML = `
                 <img src="${auto.image}" alt="${auto.merk} ${auto.model}">
                 <div class="auto-info">
-                    <h3>${auto.merk} ${auto.model}</h3>
+                    <h3>${auto.merk}  |  ${auto.model}</h3>
                     <p><strong>Categorie:</strong> ${auto.categorie} | <strong>Bouwjaar:</strong> ${auto.bouwjaar}</p>
                     <p>${auto.description}</p>
                     <a href="#" class="info-button" data-id="${auto.id}">Meer info</a>

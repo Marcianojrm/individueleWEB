@@ -58,7 +58,7 @@
             "categorie": "Hypercar",
             "image": "pictures/Koenegg.jpeg",
             "description": "Een hypercar met een twin-turbo V8-motor en geavanceerde aerodynamica, ontworpen voor ongekende snelheid en prestaties.",
-            "prijs": 3000000
+            "prijs": 30
         },
         {
             "id": 7,
@@ -189,6 +189,26 @@
             "image": "pictures/audi_e_tron_gt.jpg",
             "description": "Een luxe elektrische sportwagen met een krachtige dual-motor setup, uitstekende prestaties en een futuristisch ontwerp.",
             "prijs": 105000
+        },
+        {
+            "id": 20,
+            "merk": "Mercedes",
+            "model": "GT",
+            "bouwjaar": 2323,
+            "categorie": "Sportwagen",
+            "prijs": 300090,
+            "description": "SUper snelle waggie",
+            "image": "pictures/mercedesgt.jpg"
+        },
+        {
+            "id": 21,
+            "merk": "Volkswagen",
+            "model": "Golf TCR",
+            "bouwjaar": 2020,
+            "categorie": "Sportwagen",
+            "prijs": 40000,
+            "description": "Marciano Waggie",
+            "image": "pictures/tcr.jpg"
         }
     ]
 }
