@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.json())
             .then(data => {
                 deleteCarSelect.innerHTML = '<option value="">-- Kies een auto --</option>';
-                data.forEach(car => {
+                data.cars.forEach(car => {
                     const option = document.createElement("option");
                     option.value = car.id;
                     option.textContent = `${car.merk} ${car.model} (${car.bouwjaar})`;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("http://localhost:3000/cars")
             .then(response => response.json())
             .then(data => {
-                const highestId = data.reduce((max, car) => Math.max(max, parseInt(car.id)), 0);
+                const highestId = data.cars.reduce((max, car) => Math.max(max, parseInt(car.id)), 0);
                 const newId = highestId + 1; // ID blijft een getal
     
                 const newCar = {

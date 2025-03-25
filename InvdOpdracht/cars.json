@@ -1,204 +1,214 @@
 {
-  "cars": [
-    {
-      "id": 1,
-      "merk": "Porsche",
-      "model": "911 GT3 RS",
-      "bouwjaar": 2023,
-      "categorie": "Sportwagen",
-      "image": "pictures/Porsche.jpg",
-      "description": "Een high-performance sportwagen met een atmosferische 4.0-liter zescilinder motor en een lichtgewicht ontwerp voor maximale snelheid en wendbaarheid.",
-      "prijs": 300000
-    },
-    {
-      "id": 2,
-      "merk": "Lamborghini",
-      "model": "Urus Mansory",
-      "bouwjaar": 2022,
-      "categorie": "SUV",
-      "image": "pictures/urus.jpg",
-      "description": "Een getunede versie van Lamborghini’s Urus, met extra vermogen, een unieke bodykit en een exclusief interieur voor maximale sportiviteit.",
-      "prijs": 300000
-    },
-    {
-      "id": 3,
-      "merk": "Dodge",
-      "model": "Ram 1500",
-      "bouwjaar": 2022,
-      "categorie": "Pickup",
-      "image": "pictures/dodgeram.jpg",
-      "description": "Een robuuste en krachtige pickup truck met luxe interieur en geavanceerde technologieën voor ultiem rijcomfort en prestaties.",
-      "prijs": 60000
-    },
-    {
-      "id": 4,
-      "merk": "Ford",
-      "model": "Mustang Shelby GT500",
-      "bouwjaar": 2021,
-      "categorie": "Muscle Car",
-      "image": "pictures/FordMustangShelby.jpg",
-      "description": "Een krachtige muscle car met een supercharged V8-motor, bekend om zijn brute snelheid en agressief design.",
-      "prijs": 80000
-    },
-    {
-      "id": 5,
-      "merk": "Mercedes",
-      "model": "G-Wagon Brabus",
-      "bouwjaar": 2023,
-      "categorie": "SUV",
-      "image": "pictures/Gwagon.jpg",
-      "description": "Een luxe, op maat gemaakte SUV met verhoogde prestaties en een opvallend exterieur, ontworpen voor ultieme exclusiviteit.",
-      "prijs": 350000
-    },
-    {
-      "id": 6,
-      "merk": "Koenigsegg",
-      "model": "Jesko",
-      "bouwjaar": 2023,
-      "categorie": "Hypercar",
-      "image": "pictures/Koenegg.jpeg",
-      "description": "Een hypercar met een twin-turbo V8-motor en geavanceerde aerodynamica, ontworpen voor ongekende snelheid en prestaties.",
-      "prijs": 3000000
-    },
-    {
-      "id": 7,
-      "merk": "Lamborghini",
-      "model": "Aventador SVJ 63 Roadster",
-      "bouwjaar": 2021,
-      "categorie": "Sportwagen",
-      "image": "pictures/lambo.jpeg",
-      "description": "Een gelimiteerde open-top supercar met een V12-motor en unieke styling, exclusief ontworpen voor ultieme prestaties.",
-      "prijs": 500000
-    },
-    {
-      "id": 8,
-      "merk": "McLaren",
-      "model": "600LT Spider",
-      "bouwjaar": 2020,
-      "categorie": "Sportwagen",
-      "image": "pictures/mclaren.jpeg",
-      "description": "Een lichtgewicht supercar met een twin-turbo V8 en aerodynamisch ontwerp voor uitzonderlijke prestaties op en buiten het circuit.",
-      "prijs": 250000
-    },
-    {
-      "id": 9,
-      "merk": "Ferrari",
-      "model": "F8 Tributo",
-      "bouwjaar": 2022,
-      "categorie": "Sportwagen",
-      "image": "pictures/ferrari_f8.jpg",
-      "description": "Een krachtige Italiaanse supercar met een twin-turbo V8-motor en aerodynamische innovaties voor maximale snelheid.",
-      "prijs": 270000
-    },
-    {
-      "id": 10,
-      "merk": "Audi",
-      "model": "RS7 Sportback",
-      "bouwjaar": 2021,
-      "categorie": "Sportwagen",
-      "image": "pictures/audi_rs7.jpg",
-      "description": "Een luxe sportieve sedan met een krachtige V8-motor, quattro-aandrijving en high-tech interieur.",
-      "prijs": 120000
-    },
-    {
-      "id": 11,
-      "merk": "BMW",
-      "model": "M4 G82",
-      "bouwjaar": 2023,
-      "categorie": "Sportwagen",
-      "image": "pictures/bmw_m4.jpg",
-      "description": "Een high-performance coupé met een twin-turbo zes-in-lijn motor en agressieve styling.",
-      "prijs": 90000
-    },
-    {
-      "id": 12,
-      "merk": "Aston Martin",
-      "model": "DBS Superleggera",
-      "bouwjaar": 2020,
-      "categorie": "Sportwagen",
-      "image": "pictures/aston_dbs.jpg",
-      "description": "Een elegante Britse grand tourer met een krachtige V12-motor en een luxueus interieur.",
-      "prijs": 310000
-    },
-    {
-      "id": 13,
-      "merk": "Tesla",
-      "model": "Model S Plaid",
-      "bouwjaar": 2023,
-      "categorie": "Elektrisch",
-      "image": "pictures/tesla_model_s.jpg",
-      "description": "Een revolutionaire elektrische sedan met een verbluffende acceleratie en geavanceerde technologie.",
-      "prijs": 130000
-    },
-    {
-      "id": 14,
-      "merk": "Alfa Romeo",
-      "model": "Giulia Quadrifoglio",
-      "bouwjaar": 2022,
-      "categorie": "Sportwagen",
-      "image": "pictures/alfa_romeo_giulia.jpg",
-      "description": "Een Italiaanse sportwagen met een krachtige V6-twin-turbo motor en een agressief design voor top-prestaties.",
-      "prijs": 85000
-    },
-    {
-      "id": 15,
-      "merk": "BMW",
-      "model": "X5 M",
-      "bouwjaar": 2023,
-      "categorie": "SUV",
-      "image": "pictures/bmw_x5_m.jpg",
-      "description": "Een sportieve SUV met een V8-motor, vierwielaandrijving en een luxe interieur voor zowel prestaties als comfort.",
-      "prijs": 120000
-    },
-    {
-      "id": 16,
-      "merk": "GMC",
-      "model": "Sierra 1500",
-      "bouwjaar": 2025,
-      "categorie": "Pickup",
-      "image": "pictures/GMC_Sierra_1500.jpg",
-      "description": "Een pickup truck met een supercharged V8-motor, ontworpen voor extreme prestaties en off-road capaciteiten.",
-      "prijs": 90000
-    },
-    {
-      "id": 17,
-      "merk": "Chevrolet",
-      "model": "Camaro ZL1",
-      "bouwjaar": 2021,
-      "categorie": "Muscle Car",
-      "image": "pictures/chevrolet_camaro_zl1.jpg",
-      "description": "Een iconische muscle car met een supercharged V8-motor voor explosieve prestaties en een agressief uiterlijk.",
-      "prijs": 75000
-    },
-    {
-      "id": 18,
-      "merk": "Bugatti",
-      "model": "Chiron Super Sport",
-      "bouwjaar": 2023,
-      "categorie": "Hypercar",
-      "image": "pictures/bugatti_chiron.jpg",
-      "description": "Een hypercar met een quad-turbo W16-motor, ongekende snelheid en een luxe afwerking voor de elite van de autobezitters.",
-      "prijs": 3500000
-    },
-    {
-      "id": 19,
-      "merk": "Audi",
-      "model": "e-tron GT",
-      "bouwjaar": 2023,
-      "categorie": "Elektrisch",
-      "image": "pictures/audi_e_tron_gt.jpg",
-      "description": "Een luxe elektrische sportwagen met een krachtige dual-motor setup, uitstekende prestaties en een futuristisch ontwerp.",
-      "prijs": 105000
-    },
-    {
-      "id": 20,
-      "merk": "Mercedes",
-      "model": "GT",
-      "bouwjaar": 2022,
-      "categorie": "Sportwagen",
-      "prijs": 32323232,
-      "description": "eggeegge",
-      "image": "pictures/default.jpg"
-    }
-  ]
+    "cars": [
+        {
+            "id": 1,
+            "merk": "Porsche",
+            "model": "911 GT3 RS",
+            "bouwjaar": 2023,
+            "categorie": "Sportwagen",
+            "image": "pictures/Porsche.jpg",
+            "description": "Een high-performance sportwagen met een atmosferische 4.0-liter zescilinder motor en een lichtgewicht ontwerp voor maximale snelheid en wendbaarheid.",
+            "prijs": 300000
+        },
+        {
+            "id": 2,
+            "merk": "Lamborghini",
+            "model": "Urus Mansory",
+            "bouwjaar": 2022,
+            "categorie": "SUV",
+            "image": "pictures/urus.jpg",
+            "description": "Een getunede versie van Lamborghini’s Urus, met extra vermogen, een unieke bodykit en een exclusief interieur voor maximale sportiviteit.",
+            "prijs": 300000
+        },
+        {
+            "id": 3,
+            "merk": "Dodge",
+            "model": "Ram 1500",
+            "bouwjaar": 2022,
+            "categorie": "Pickup",
+            "image": "pictures/dodgeram.jpg",
+            "description": "Een robuuste en krachtige pickup truck met luxe interieur en geavanceerde technologieën voor ultiem rijcomfort en prestaties.",
+            "prijs": 60000
+        },
+        {
+            "id": 4,
+            "merk": "Ford",
+            "model": "Mustang Shelby GT500",
+            "bouwjaar": 2021,
+            "categorie": "Muscle Car",
+            "image": "pictures/FordMustangShelby.jpg",
+            "description": "Een krachtige muscle car met een supercharged V8-motor, bekend om zijn brute snelheid en agressief design.",
+            "prijs": 80000
+        },
+        {
+            "id": 5,
+            "merk": "Mercedes",
+            "model": "G-Wagon Brabus",
+            "bouwjaar": 2023,
+            "categorie": "SUV",
+            "image": "pictures/Gwagon.jpg",
+            "description": "Een luxe, op maat gemaakte SUV met verhoogde prestaties en een opvallend exterieur, ontworpen voor ultieme exclusiviteit.",
+            "prijs": 350000
+        },
+        {
+            "id": 6,
+            "merk": "Koenigsegg",
+            "model": "Jesko",
+            "bouwjaar": 2023,
+            "categorie": "Hypercar",
+            "image": "pictures/Koenegg.jpeg",
+            "description": "Een hypercar met een twin-turbo V8-motor en geavanceerde aerodynamica, ontworpen voor ongekende snelheid en prestaties.",
+            "prijs": 30
+        },
+        {
+            "id": 7,
+            "merk": "Lamborghini",
+            "model": "Aventador SVJ 63 Roadster",
+            "bouwjaar": 2021,
+            "categorie": "Sportwagen",
+            "image": "pictures/lambo.jpeg",
+            "description": "Een gelimiteerde open-top supercar met een V12-motor en unieke styling, exclusief ontworpen voor ultieme prestaties.",
+            "prijs": 500000
+        },
+        {
+            "id": 8,
+            "merk": "McLaren",
+            "model": "600LT Spider",
+            "bouwjaar": 2020,
+            "categorie": "Sportwagen",
+            "image": "pictures/mclaren.jpeg",
+            "description": "Een lichtgewicht supercar met een twin-turbo V8 en aerodynamisch ontwerp voor uitzonderlijke prestaties op en buiten het circuit.",
+            "prijs": 250000
+        },
+        {
+            "id": 9,
+            "merk": "Ferrari",
+            "model": "F8 Tributo",
+            "bouwjaar": 2022,
+            "categorie": "Sportwagen",
+            "image": "pictures/ferrari_f8.jpg",
+            "description": "Een krachtige Italiaanse supercar met een twin-turbo V8-motor en aerodynamische innovaties voor maximale snelheid.",
+            "prijs": 270000
+        },
+        {
+            "id": 10,
+            "merk": "Audi",
+            "model": "RS7 Sportback",
+            "bouwjaar": 2021,
+            "categorie": "Sportwagen",
+            "image": "pictures/audi_rs7.jpg",
+            "description": "Een luxe sportieve sedan met een krachtige V8-motor, quattro-aandrijving en high-tech interieur.",
+            "prijs": 120000
+        },
+        {
+            "id": 11,
+            "merk": "BMW",
+            "model": "M4 G82",
+            "bouwjaar": 2023,
+            "categorie": "Sportwagen",
+            "image": "pictures/bmw_m4.jpg",
+            "description": "Een high-performance coupé met een twin-turbo zes-in-lijn motor en agressieve styling.",
+            "prijs": 90000
+        },
+        {
+            "id": 12,
+            "merk": "Aston Martin",
+            "model": "DBS Superleggera",
+            "bouwjaar": 2020,
+            "categorie": "Sportwagen",
+            "image": "pictures/aston_dbs.jpg",
+            "description": "Een elegante Britse grand tourer met een krachtige V12-motor en een luxueus interieur.",
+            "prijs": 310000
+        },
+        {
+            "id": 13,
+            "merk": "Tesla",
+            "model": "Model S Plaid",
+            "bouwjaar": 2023,
+            "categorie": "Elektrisch",
+            "image": "pictures/tesla_model_s.jpg",
+            "description": "Een revolutionaire elektrische sedan met een verbluffende acceleratie en geavanceerde technologie.",
+            "prijs": 130000
+        },
+        {
+            "id": 14,
+            "merk": "Alfa Romeo",
+            "model": "Giulia Quadrifoglio",
+            "bouwjaar": 2022,
+            "categorie": "Sportwagen",
+            "image": "pictures/alfa_romeo_giulia.jpg",
+            "description": "Een Italiaanse sportwagen met een krachtige V6-twin-turbo motor en een agressief design voor top-prestaties.",
+            "prijs": 85000
+        },
+        {
+            "id": 15,
+            "merk": "BMW",
+            "model": "X5 M",
+            "bouwjaar": 2023,
+            "categorie": "SUV",
+            "image": "pictures/bmw_x5_m.jpg",
+            "description": "Een sportieve SUV met een V8-motor, vierwielaandrijving en een luxe interieur voor zowel prestaties als comfort.",
+            "prijs": 120000
+        },
+        {
+            "id": 16,
+            "merk": "GMC",
+            "model": "Sierra 1500",
+            "bouwjaar": 2025,
+            "categorie": "Pickup",
+            "image": "pictures/GMC_Sierra_1500.jpg",
+            "description": "Een pickup truck met een supercharged V8-motor, ontworpen voor extreme prestaties en off-road capaciteiten.",
+            "prijs": 90000
+        },
+        {
+            "id": 17,
+            "merk": "Chevrolet",
+            "model": "Camaro ZL1",
+            "bouwjaar": 2021,
+            "categorie": "Muscle Car",
+            "image": "pictures/chevrolet_camaro_zl1.jpg",
+            "description": "Een iconische muscle car met een supercharged V8-motor voor explosieve prestaties en een agressief uiterlijk.",
+            "prijs": 75000
+        },
+        {
+            "id": 18,
+            "merk": "Bugatti",
+            "model": "Chiron Super Sport",
+            "bouwjaar": 2023,
+            "categorie": "Hypercar",
+            "image": "pictures/bugatti_chiron.jpg",
+            "description": "Een hypercar met een quad-turbo W16-motor, ongekende snelheid en een luxe afwerking voor de elite van de autobezitters.",
+            "prijs": 3500000
+        },
+        {
+            "id": 19,
+            "merk": "Audi",
+            "model": "e-tron GT",
+            "bouwjaar": 2023,
+            "categorie": "Elektrisch",
+            "image": "pictures/audi_e_tron_gt.jpg",
+            "description": "Een luxe elektrische sportwagen met een krachtige dual-motor setup, uitstekende prestaties en een futuristisch ontwerp.",
+            "prijs": 105000
+        },
+        {
+            "id": 20,
+            "merk": "Mercedes",
+            "model": "GT",
+            "bouwjaar": 2323,
+            "categorie": "Sportwagen",
+            "prijs": 300090,
+            "description": "SUper snelle waggie",
+            "image": "pictures/mercedesgt.jpg"
+        },
+        {
+            "id": 21,
+            "merk": "Volkswagen",
+            "model": "Golf TCR",
+            "bouwjaar": 2020,
+            "categorie": "Sportwagen",
+            "prijs": 40000,
+            "description": "Marciano Waggie",
+            "image": "pictures/tcr.jpg"
+        }
+    ]
 }
